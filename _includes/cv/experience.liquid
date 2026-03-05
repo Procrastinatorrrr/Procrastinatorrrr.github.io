@@ -78,9 +78,7 @@
           {% if entry.highlights %}
             <ul class="items">
               {% for item in entry.highlights %}
-                <li>
-                  <span class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</span>
-                </li>
+                <li class="item">{{ item | markdownify | remove: '<p>' | remove: '</p>' }}</li>
               {% endfor %}
             </ul>
           {% endif %}
