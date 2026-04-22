@@ -1,6 +1,22 @@
 :root {
     --main-width: 1000px;
     --code-block-bg: var(--code-bg);
+    scrollbar-gutter: stable;
+
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary);
+    border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary);
+}
 
     --chroma-k: #9c6fd3;
     --chroma-na: #3e68ab;
@@ -61,6 +77,11 @@
 .list .header {
     background: var(--code-bg);
 }
+
+[data-theme="dark"] .list .header{
+    background: var(--theme);
+}
+
 
 .post-content {
     font-size: 18px;

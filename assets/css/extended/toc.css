@@ -2,24 +2,21 @@
 @media screen and (min-width: 1300px) {
     .toc {
         position: fixed;
-        top: 100px; /* 侧栏距离页面顶部的距离 */
-        /* 将侧边栏定位到主内容的右侧：50%是屏幕正中，380px是向右的偏移量。
-           如果侧边栏离文章太远或遮挡文章，可以微调这里的 380px */
-        left: calc(50% - 900px); 
-        width: 300px; /* 侧边栏目录的宽度 */
+        top: 100px;
+        /* 动态计算：内容区右边界 + 间距 */
+        right: max(20px, calc(50vw - 960px + 20px));
+        width: 300px;
         max-height: calc(100vh - 150px);
-        overflow-y: auto; /* 目录较长时允许内部滚动 */
-        
-        /* 视觉美化 */
-        background: var(--theme); /* 背景颜色，随亮/暗主题自动切换 */
+        overflow-y: auto;
+
+        background: var(--theme);
         border: 1px solid var(--border);
         border-radius: var(--radius);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.04);
         padding: 20px;
-        z-index: 99; /* 保证目录层级在最上面 */
+        z-index: 99;
     }
 
-    /* 在宽屏状态下隐藏原来的 details 折叠小箭头 */
     .toc details summary {
         cursor: default;
     }
