@@ -1,5 +1,5 @@
 :root {
-    --main-width: 1000px;
+    --main-width: 800px;
     --code-block-bg: var(--code-bg);
     scrollbar-gutter: stable;
 

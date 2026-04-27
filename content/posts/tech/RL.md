@@ -1,6 +1,6 @@
 ---
 title: "大模型中的强化学习：从 REINFORCE 到 xxPO"
-date: 2026-04-11
+date: 2026-03-21
 author: "Yijun Long"
 tags: ["RL", "LLM", "RLHF", "PPO", "GRPO", "RLVR"]
 categories: ["Machine Learning", "LLM", "Reinforcement Learning"]
@@ -1087,6 +1087,18 @@ DPO 洞察到了 KL 惩罚下的闭式解，用优雅的数学等价替换了复
 
 时至今日，仍然有各种改进的强化学习算法源源不断地涌现，模型的能力也水涨船高，甚至在程序开发领域已经引发了大规模的恐慌。但与此同时，我们也需要意识到，现阶段的强化学习并非十全十美。在面对难以验证的任务时，各种算法仍旧依赖奖励模型，而奖励模型天然的缺陷致使强化学习依然步履维艰，依然在等待着新的突破。山的那头是什么？何处是RL的边界？仍未可知。
 
+## References
+
+- [1] Schulman, J., et al. (2017). [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347). *arXiv preprint arXiv:1707.06347*.
+- [2] Wei, J., et al. (2022).[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903). *arXiv preprint arXiv:2201.11903*.
+- [3] Ouyang, L., et al. (2022). [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155). *arXiv preprint arXiv:2203.02155*.
+- [4] Rafailov, R., et al. (2023). [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290). *arXiv preprint arXiv:2305.18290*.
+- [5] Shao, Z., et al. (2024). [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models (GRPO)](https://arxiv.org/abs/2402.03300). *arXiv preprint arXiv:2402.03300*.
+- [6] Guo, D., et al. (2025). [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948). *arXiv preprint arXiv:2501.12948*.
+- [7] Zhang, Y., et al. (2025).[DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476). *arXiv preprint arXiv:2503.14476*.
+- [8] Wang, X., et al. (2025).[MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention](https://arxiv.org/abs/2506.13585). *arXiv preprint arXiv:2506.13585*.
+- [9] Li, H., et al. (2025). [Group Sequence Policy Optimization](https://arxiv.org/abs/2507.18071). *arXiv preprint arXiv:2507.18071*.
+
 ## Citation
 
 如果你在研究或工作中引用了本文，请以以下格式引用：
@@ -1108,15 +1120,3 @@ DPO 洞察到了 KL 惩罚下的闭式解，用优雅的数学等价替换了复
 ```txt
 Long, Y. (2026). 大模型中的强化学习：从 REINFORCE 到 xxPO. https://procrastinatorrrr.github.io/posts/tech/202604-rl-llm/
 ```
-
-## References
-
-- [1] Schulman, J., et al. (2017). [Proximal Policy Optimization Algorithms](https://arxiv.org/abs/1707.06347). *arXiv preprint arXiv:1707.06347*.
-- [2] Wei, J., et al. (2022).[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903). *arXiv preprint arXiv:2201.11903*.
-- [3] Ouyang, L., et al. (2022). [Training language models to follow instructions with human feedback](https://arxiv.org/abs/2203.02155). *arXiv preprint arXiv:2203.02155*.
-- [4] Rafailov, R., et al. (2023). [Direct Preference Optimization: Your Language Model is Secretly a Reward Model](https://arxiv.org/abs/2305.18290). *arXiv preprint arXiv:2305.18290*.
-- [5] Shao, Z., et al. (2024). [DeepSeekMath: Pushing the Limits of Mathematical Reasoning in Open Language Models (GRPO)](https://arxiv.org/abs/2402.03300). *arXiv preprint arXiv:2402.03300*.
-- [6] Guo, D., et al. (2025). [DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948). *arXiv preprint arXiv:2501.12948*.
-- [7] Zhang, Y., et al. (2025).[DAPO: An Open-Source LLM Reinforcement Learning System at Scale](https://arxiv.org/abs/2503.14476). *arXiv preprint arXiv:2503.14476*.
-- [8] Wang, X., et al. (2025).[MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention](https://arxiv.org/abs/2506.13585). *arXiv preprint arXiv:2506.13585*.
-- [9] Li, H., et al. (2025). [Group Sequence Policy Optimization](https://arxiv.org/abs/2507.18071). *arXiv preprint arXiv:2507.18071*.
